@@ -1,0 +1,67 @@
+html {
+  transition:all 0.5s ease-in-out;
+}
+
+//Clean sticky footer
+html, body {
+  height:100%;
+  color: $typl8-copy-color;
+}
+
+$home-main-background-top-overlay:rgba(150,70,0,0.35);
+$home-main-background-bottom-overlay:rgba(30,20,10,0.8);
+$home-main-background-gradient-direction:to bottom right;
+
+main {
+  //min-height:100%;
+  margin:0;
+  padding:0;
+  width:100%;
+  overflow-x:hidden;
+  overflow-y:auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-image:linear-gradient($home-main-background-gradient-direction, $home-main-background-top-overlay, $home-main-background-bottom-overlay), url('../images/steelbeams-480.jpg');
+  @media all and (min-width: 320px) {
+    background-image:linear-gradient($home-main-background-gradient-direction, $home-main-background-top-overlay, $home-main-background-bottom-overlay), url('../images/steelbeams-640.jpg');
+  }
+  @media all and (min-width: 480px) {
+    background-image:linear-gradient($home-main-background-gradient-direction, $home-main-background-top-overlay, $home-main-background-bottom-overlay), url('../images/steelbeams-800.jpg');
+  }
+  @media all and (min-width: 640px) {
+    background-image:linear-gradient($home-main-background-gradient-direction, $home-main-background-top-overlay, $home-main-background-bottom-overlay), url('../images/steelbeams-1024.jpg');
+  }
+  @media all and (min-width: 800px) {
+    background-image:linear-gradient($home-main-background-gradient-direction, $home-main-background-top-overlay, $home-main-background-bottom-overlay), url('../images/steelbeams-1280.jpg');
+  }
+  @media all and (min-width: 1024px) {
+    background-image:linear-gradient($home-main-background-gradient-direction, $home-main-background-top-overlay, $home-main-background-bottom-overlay), url('../images/steelbeams-1600.jpg');
+  }
+  @media all and (min-width: 1280px) {
+    background-image:linear-gradient($home-main-background-gradient-direction, $home-main-background-top-overlay, $home-main-background-bottom-overlay), url('../images/steelbeams-1890.jpg');
+  }
+  @media all and (min-width: 1600px) {
+    background-image:linear-gradient($home-main-background-gradient-direction, $home-main-background-top-overlay, $home-main-background-bottom-overlay), url('../images/steelbeams-2400.jpg');
+  }
+}
+
+main {
+  width:100%;
+  min-height:100%;
+  height:auto !important;
+  height:100%;
+  margin:0 0 -4em 0;
+}
+
+.footer-wrapper {
+  height:4em;
+  padding:0 2em;
+}
+
+section {
+  width: 100%;
+  max-width:50em;
+  margin:0 auto 4em auto;
+  padding:0 2em;
+}

@@ -1,0 +1,40 @@
+.site-header {
+  @extend .clearfix;
+  position:relative;
+  margin-bottom:2em;
+  padding:2em 2em 0 2em;
+  width:100%;
+  z-index:100;
+  @media all and (min-width: 600px) {
+    margin-bottom:1em;
+  }
+}
+
+.site-branding {
+  @extend .typl8-alpha;
+  width:3.4em;
+  float:left;
+}
+
+.site-title {
+  @extend .typl8-alpha;
+  width:3.4em;
+  float:left;
+  text-align:justify;
+  letter-spacing: -0.03em;
+  line-height:0.85;
+  height:1.6em;
+  margin-bottom:0.25em;
+  display:inline;
+  color:white;
+  z-index:100;
+  .site-title__first-word {
+    letter-spacing: -0.0165em;
+  }
+}
+
+.site-subtitle {
+  color:white;
+  float:left;
+  font-size:0.245em;
+}

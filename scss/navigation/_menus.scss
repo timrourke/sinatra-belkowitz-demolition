@@ -1,0 +1,28 @@
+.site-navigation {
+	float:right;
+	padding-top:0em;
+}
+
+.site-navigation ul {
+	float:right;
+	display:block;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+.site-navigation li {
+	float:left;
+	margin-left:1em;
+	display:block;
+}
+
+a.site-navigation__item {
+	color:white;
+	text-transform: uppercase;
+}
+
+a.site-navigation__item.active,
+a.site-navigation__item:hover {
+	color:lighten($yellow, 25%);
+}

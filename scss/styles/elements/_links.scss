@@ -1,0 +1,39 @@
+a {
+  transition:all 0.3s ease-in-out;
+	background-color: transparent;
+}
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+a {
+	color: $color__link;
+
+	&:visited {
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+	&:focus {
+		outline:2px solid rgba(0,0,0,0.25);
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+	@extend %hover-color-yellow;
+}
+
+*:focus {
+	outline:2px solid rgba(0,0,0,0.25);
+	background-color:rgba(0,0,0,0.25);
+	color:lighten($yellow, 25%) !important;
+	* {
+		background-color:rgba(0,0,0,0.25);
+	}
+}

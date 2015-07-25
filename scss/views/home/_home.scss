@@ -1,0 +1,20 @@
+.home article {
+	text-align:center;
+	width:100%;
+	max-width:35em;
+	margin:0 auto;
+	padding:1em;
+	color:white;
+}
+
+.home .section-title {
+	@extend .typl8-mega;
+	color:lighten($yellow, 25%);
+	margin-bottom:0.5em;
+}
+
+.home p {
+	@extend .typl8-delta;
+	color:white;
+	line-height:1.3;
+}

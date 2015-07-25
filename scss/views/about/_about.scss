@@ -1,0 +1,37 @@
+.about {
+	padding-top:0;
+}
+
+.about .section-title {
+	@extend .typl8-mega;
+	color:lighten($yellow, 25%);
+	margin-bottom:0.5em;
+	text-align:right;
+	@media all and (max-width:800px) {
+		text-align:center;
+	}
+}
+
+.about .section-content {
+	padding:1em;
+	background-color:rgba(255,255,255,0.8);
+}
+
+.about .col-1-3 {
+	@media all and (max-width:800px) {
+		width:100%;
+		margin-right:0;
+		margin-bottom:1em;
+	}
+}
+
+.about h3 {
+	padding-left:0.125em;
+	margin-bottom:0.25em;
+	color:$typl8-copy-color;
+}
+
+.about p {
+	padding:0.5em;
+	font-size:0.8em;
+}

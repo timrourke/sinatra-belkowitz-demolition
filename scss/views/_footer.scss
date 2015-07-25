@@ -1,0 +1,31 @@
+.site-footer {
+  padding:1.5em 0;
+  font-size:0.8em;
+}
+
+.site-footer .contact ul {
+  @extend .clearfix;
+  float:right;
+  margin:0;
+  padding:0;
+  list-style-type:none;
+}
+
+.site-footer .contact li {
+  float:left;
+  margin-right:0.5em;
+}
+
+.site-footer .contact .icon {
+  width:1.25em;
+  height:1.25em;
+  fill:$yellow;
+  @extend %hover-fill-yellow;
+}
+
+.icon {
+  transition:all 0.3s ease-in-out;
+  &:hover {
+    transform:scale(1.12);
+  }
+}
